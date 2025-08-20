@@ -7,9 +7,9 @@ using SixOs_Test_2.Models.M0402.DTO0402;
 
 namespace SixOs_Test_2.Context
 {
-    public class AppDbContext : DbContext
+    public class Context0402 : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public Context0402(DbContextOptions<Context0402> options) : base(options) { }
 
         public DbSet<M0402NoiDungHen> DSNoiDungHen { get; set; }
         public DbSet<DTO0402DataPDFPhieuHen> DataPhieuHen { get; set; }

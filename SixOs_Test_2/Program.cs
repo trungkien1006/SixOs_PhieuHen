@@ -18,8 +18,8 @@ builder.Services.AddControllersWithViews()
     });
 
 // Đăng ký DbContext với connection string
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<Context0402>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
 
 // Cấu hình Session (SỬA TỪ services -> builder.Services)
 builder.Services.AddSession(options =>

@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["NonSixOs"] = true;
+}
+
+<link rel="stylesheet" href="~/dist/css/CSS0402/CSS0402style.css" asp-append-version="true" />
+
+<div id="appointment-modal" class="appointment-overlay">
+    <div class="appointment-modal">
+        <h4 class="appointment-header">
+            Vui lòng chọn loại phiếu hẹn cần xuất
+        </h4>
+
+        <div class="appointment-search d-flex">
+            <input type="text" class="appointment-search-input" placeholder="Loại phiếu nhập...">
+        </div>
+
+        <div class="appointment-body">
+            <!-- <div class="appointment-body-item">
+              <input id="a" type="radio" name="appointment-type" />
+              <label for="a">Cộng hưởng từ</label>
+            </div>
+            <div class="appointment-body-item">
+              <input id="b" type="radio" name="appointment-type" />
+              <label for="b">Điện não</label>
+            </div>
+            <div class="appointment-body-item">
+              <input id="c" type="radio" name="appointment-type" />
+              <label for="c">Điện tim</label>
+            </div>
+            <div class="appointment-body-item">
+              <input id="d" type="radio" name="appointment-type" />
+              <label for="d">Điện tim</label>
+            </div>
+            <div class="appointment-body-item">
+              <input id="e" type="radio" name="appointment-type" />
+              <label for="e">Cộng hưởng từ</label>
+            </div> -->
+        </div>
+
+        <div class="appointment-btn">
+            <button id="appointment-btn-export" class="btn btn-primary">
+                Xuất PDF
+            </button>
+            <button id="appointment-btn-close" class="btn btn-secondary">
+                Đóng
+            </button>
+        </div>
+
+        <iframe id="pdfFrame" style="display:none;"></iframe>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/dist/js/BienChung.js" defer></script>
+    <script type="module" src="~/dist/js/J0402/J0402main.js" defer></script>
+}

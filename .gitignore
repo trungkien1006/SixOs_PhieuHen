@@ -1,0 +1,52 @@
+﻿# ASP.NET Core .NET
+bin/
+obj/
+out/
+**/lib/
+**/libs/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+# Nếu dùng ASP.NET Core thì chỉ cần giữ lại .csproj, không cần đẩy packages
+*.nuget/
+*.lock.json
+
+# Rider (JetBrains)
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Others
+*.dbmdl
+*.bak
+*.backup
+*.swp
+*.tmp
+*.temp
